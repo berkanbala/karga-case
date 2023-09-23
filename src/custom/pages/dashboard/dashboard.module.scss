@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  /* min-height: 100vh; */
+  /* width: 1920px; */
+  /* height: 6366px; */
+  background: #fad8d8;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+  }
+}

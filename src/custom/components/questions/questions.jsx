@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Title, Accordion } from "@mantine/core";
-import classes from "@/styles/questions.module.css";
+import classes from "@/styles/questions.module.scss";
 
 export default function Questions() {
   const placeholder =

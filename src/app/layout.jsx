@@ -1,3 +1,4 @@
+import "@/styles/globals.scss";
 import { MantineProvider } from "@mantine/core";
 import { Inter } from "next/font/google";
 

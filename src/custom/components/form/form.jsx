@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@/styles/form.module.css";
+import styles from "@/styles/form.module.scss";
 
 export default function Form() {
   return (

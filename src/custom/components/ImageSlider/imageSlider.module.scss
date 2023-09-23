@@ -1,0 +1,45 @@
+.container {
+  margin-bottom: 60px;
+
+  .sliderImages {
+    all: unset !important;
+  }
+
+  .arrowLeft {
+    position: absolute;
+    left: 0;
+    padding: 8px;
+    border-radius: 9999px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #e41111;
+    cursor: pointer;
+    top: 50%;
+  }
+
+  .arrowRight {
+    position: absolute;
+    right: 0;
+    padding: 8px;
+    border-radius: 9999px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #e41111;
+    cursor: pointer;
+    top: 50%;
+  }
+
+  .slider {
+    display: flex;
+    top: 1rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    justify-content: center;
+
+    .dots {
+      font-size: 24px;
+      line-height: 32px;
+      cursor: pointer;
+    }
+  }
+}
