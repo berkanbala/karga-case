@@ -1,0 +1,97 @@
+.icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-10%, -10%);
+  margin: 40px 6% 0 24%;
+}
+.icon li {
+  list-style: none;
+  margin-right: 15px;
+  transition: 300ms transform;
+}
+.icon li:hover {
+  transform: scale(1.3);
+}
+.icon li a {
+  position: relative;
+  display: block;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 50px;
+  background: #111;
+  border-radius: 50%;
+  color: #d9d9d9;
+  transition: 0.5s;
+}
+.icon .facebook a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #4267b2;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+.icon .facebook a:hover {
+  color: #4267b2;
+  background-color: #fff;
+  box-shadow: 0 0 15px #4267b2;
+}
+.icon .facebook a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #4267b2;
+}
+.icon .instagram a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #e1306c;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+.icon .instagram a:hover {
+  color: #e1306c;
+  background-color: #fff;
+  box-shadow: 0 0 15px #e1306c;
+}
+.icon .instagram a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #e1306c;
+}
+.icon .twitter a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #1da1f2;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+.icon .twitter a:hover {
+  color: #1da1f2;
+  background-color: #fff;
+  box-shadow: 0 0 15px #1da1f2;
+}
+.icon .twitter a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #1da1f2;
+}
+.footer {
+  gap: 10px;
+}
