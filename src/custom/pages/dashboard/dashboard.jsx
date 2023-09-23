@@ -24,12 +24,8 @@ export default function Dashboard() {
       <ImageSlider />
       <div className={styles.content}>
         <div className={styles.cookies}>cookies</div>
-        <div className={styles.services}>
-          <Services />
-        </div>
-        <div>
-          <Staff />
-        </div>
+        <Services />
+        <Staff />
         <div>feedback-slider</div>
         {/* <TheProject /> */}
         {/* <div className={styles.imageAd}> */}
@@ -37,13 +33,9 @@ export default function Dashboard() {
         {/* </div> */}
         {/* <Questions /> */}
         <Fast />
-        <div>
-          <Form />
-        </div>
+        <Form />
       </div>
-      <div>
-        <Footer />
-      </div>
+      <Footer />
     </main>
   );
 }

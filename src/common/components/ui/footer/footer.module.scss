@@ -1,10 +1,13 @@
+.container {
+  background-color: #fff;
+  width: 100%;
+}
 .icon {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   transform: translate(-10%, -10%);
-  margin: 40px 6% 0 24%;
+  padding: 46px 6px 24px 377px;
+  justify-items: start;
+  justify-content: center;
 }
 .icon li {
   list-style: none;
@@ -93,5 +96,8 @@
   box-shadow: 0 0 15px #1da1f2;
 }
 .footer {
-  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row-reverse;
 }

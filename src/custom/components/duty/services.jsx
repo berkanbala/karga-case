@@ -1,72 +1,53 @@
 import React from "react";
 import styles from "@/styles/services.module.scss";
+import Purple from "@/common/media/images/Rectangle1.png";
+import Red from "@/common/media/images/Rectangle2.png";
+import Grey from "@/common/media/images/Rectangle3.png";
+import Image from "next/image";
 
 export default function Services() {
   return (
     <div className={styles.services}>
-      <div>
+      <div className={styles.card}>
         <h2>Character Design</h2>
-        <img
-          alt=""
-          src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcayvEge6giapQISIplcc3kl94IT4H6g6zmA&usqp=CAU`}
-        />
-        <p>Development of the character "Music teacher"</p>
+        {/* <img alt="" src={} /> */}
+        <Image alt="" src={Purple} />
+        <span>Development of the character "Music teacher"</span>
       </div>
-      <div>
+      <div className={styles.card}>
         <h2>Environment Art</h2>
-        <img
-          alt=""
-          src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyGzVsQNbxHPfzVv2Is0w1zhaC7zR3SWR5Fw&usqp=CAU`}
-        />
-        <p>Concept art environment for the novel "Capital"</p>
+        <Image alt="" src={Red} />
+        <span>Concept art environment for the novel "Capital"</span>
       </div>
-      <div>
+      <div className={styles.card}>
         <h2>2D-illustrations</h2>
-        <img
-          alt=""
-          src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcayvEge6giapQISIplcc3kl94IT4H6g6zmA&usqp=CAU`}
-        />
-        <p>Illustration for the comic "Star Girl"</p>
+        <Image alt="" src={Purple} />
+        <span>Illustration for the comic "Star Girl"</span>
       </div>
-      <div>
+      <div className={styles.card}>
         <h2>3D-modeling</h2>
-        <img
-          alt=""
-          src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyGzVsQNbxHPfzVv2Is0w1zhaC7zR3SWR5Fw&usqp=CAU`}
-        />
-        <p>3D character concept</p>
+        <Image alt="" src={Grey} />
+        <span>3D character concept</span>
       </div>
-      <div>
+      <div className={styles.card}>
         <h2>Book design</h2>
-        <img
-          alt=""
-          src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcayvEge6giapQISIplcc3kl94IT4H6g6zmA&usqp=CAU`}
-        />
-        <p>Design of the book "Red Sands of Durnwood"</p>
+        <Image alt="" src={Red} />
+        <span>Design of the book "Red Sands of Durnwood"</span>
       </div>
-      <div>
+      <div className={styles.card}>
         <h2>Ux/Ui design</h2>
-        <img
-          alt=""
-          src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyGzVsQNbxHPfzVv2Is0w1zhaC7zR3SWR5Fw&usqp=CAU`}
-        />
-        <p>Website for art studio “Manco Art”</p>
+        <Image alt="" src={Grey} />
+        <span>Website for art studio “Manco Art”</span>
       </div>
-      <div>
+      <div className={styles.card}>
         <h2>Branding</h2>
-        <img
-          alt=""
-          src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcayvEge6giapQISIplcc3kl94IT4H6g6zmA&usqp=CAU`}
-        />
-        <p>Corporate style "VESPA"</p>
+        <Image alt="" src={Red} />
+        <span>Corporate style "VESPA"</span>
       </div>
-      <div>
+      <div className={styles.card}>
         <h2>NFT-collection</h2>
-        <img
-          alt=""
-          src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyGzVsQNbxHPfzVv2Is0w1zhaC7zR3SWR5Fw&usqp=CAU`}
-        />
-        <p>NFT collection "Dream"</p>
+        <Image alt="" src={Purple} />
+        <span>NFT collection "Dream"</span>
       </div>
     </div>
   );

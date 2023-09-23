@@ -1,0 +1,38 @@
+.container {
+  text-align: center;
+  .staff {
+    display: flex;
+    flex-direction: row;
+    // position: absolute;
+    .title {
+      // position: absolute;
+      font-family: "Roboto Flex";
+      font-style: normal;
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 60px;
+      letter-spacing: 0.96px;
+      text-transform: uppercase;
+      color: #0b1519;
+    }
+    .text {
+      // position: absolute;
+      float: right;
+      text-align: right;
+      font-family: "Roboto Flex";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 34px;
+      color: #0b1519;
+    }
+  }
+  .content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 10px 10px 25px 10px;
+    .work {
+    }
+  }
+}

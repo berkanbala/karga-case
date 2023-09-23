@@ -6,17 +6,20 @@ export default function Form() {
     <div className={styles.App}>
       <form className={styles.form}>
         <h1 className={styles.h1}>start your project</h1>
+        <span className={styles.span}>
+          Leave your contact details and we will contact you
+        </span>
         <label className={styles.label}>
           enter your name:
           <input className={styles.input} />
         </label>
-        <label>
+        <label className={styles.label}>
           enter your name:
-          <input />
+          <input className={styles.input} />
         </label>
-        <label>
+        <label className={styles.label}>
           enter your name:
-          <input />
+          <input className={styles.input} />
         </label>
         <button className={styles.button}>submit</button>
       </form>

@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import ImageFacebook from "@/common/media/images/facebook.png";
-import ImageInstagram from "@/common/media/images/instagram.png";
-import ImageTwitter from "@/common/media/images/twitter.png";
+import ImageFacebook from "@/common/media/logo/facebook.png";
+import ImageInstagram from "@/common/media/logo/instagram.png";
+import ImageTwitter from "@/common/media/logo/twitter.png";
 import styles from "./footer.module.scss";
 
 export default function Footer() {

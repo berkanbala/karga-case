@@ -37,7 +37,7 @@ export default function Fast() {
   };
 
   return (
-    <div>
+    <div className={styles.fag}>
       <Faq
         data={data}
         styles={styles}
