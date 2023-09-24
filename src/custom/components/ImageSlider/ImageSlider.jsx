@@ -1,8 +1,8 @@
 // "use client";
 import { useState } from "react";
-import Image from "next/image";
 import { RxDotFilled } from "react-icons/rx";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+import Image from "next/image";
 import styles from "./imageSlider.module.scss";
 
 export default function ImageSlider() {

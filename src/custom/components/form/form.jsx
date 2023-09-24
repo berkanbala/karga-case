@@ -9,18 +9,11 @@ export default function Form() {
         <span className={styles.span}>
           Leave your contact details and we will contact you
         </span>
-        <label className={styles.label}>
-          enter your name:
-          <input className={styles.input} />
-        </label>
-        <label className={styles.label}>
-          enter your name:
-          <input className={styles.input} />
-        </label>
-        <label className={styles.label}>
-          enter your name:
-          <input className={styles.input} />
-        </label>
+        <input placeholder="How can I contact you?" className={styles.input} />
+        <input placeholder="Phone/email" className={styles.input} />
+        <input placeholder="Add a message" className={styles.input} />
+        <input type="checkbox" />
+        <label>I agree to the processing of personal data.</label>
         <button className={styles.button}>submit</button>
       </form>
     </div>

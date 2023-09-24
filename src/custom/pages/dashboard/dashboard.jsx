@@ -23,10 +23,10 @@ export default function Dashboard() {
       <Header />
       <ImageSlider />
       <div className={styles.content}>
-        <div className={styles.cookies}>cookies</div>
+        {/* <div className={styles.cookies}>cookies</div> */}
         <Services />
         <Staff />
-        <div>feedback-slider</div>
+        {/* <div>feedback-slider</div> */}
         {/* <TheProject /> */}
         {/* <div className={styles.imageAd}> */}
         <Image alt="icon" src={ImagePageAd} style={stylesImageAd} />
