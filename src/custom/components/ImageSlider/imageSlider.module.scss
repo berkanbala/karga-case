@@ -1,8 +1,12 @@
 .container {
+  position: relative;
   margin-bottom: 60px;
 
   .sliderImages {
     all: unset !important;
+    position: absolute;
+    width: 500px;
+    height: 500px;
   }
 
   .arrowLeft {

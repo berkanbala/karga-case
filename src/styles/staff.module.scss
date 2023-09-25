@@ -1,5 +1,7 @@
 .container {
   text-align: center;
+  margin-bottom: 120px;
+
   .staff {
     display: flex;
     flex-direction: row;
@@ -25,9 +27,22 @@
     }
   }
   .content {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 10px 10px 25px 10px;
+    cursor: pointer;
+    .work {
+      position: relative;
+      width: 333px;
+      height: 333px;
+      .span {
+        position: relative;
+        display: flex;
+        top: 360px;
+        padding: 5px;
+      }
+    }
   }
 }

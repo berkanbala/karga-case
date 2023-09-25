@@ -4,6 +4,7 @@
   text-align: center;
   padding: 0 0 25px 0;
   .card {
+    gap: 5px;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
     color: #454545;
@@ -18,21 +19,26 @@
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
+    .stylesImageServices {
+      position: relative;
+      width: 275px;
+      height: 150px;
+    }
 
     h2 {
-      padding: 40px 150px 39px 20px;
+      padding: 15px 150px 20px 20px;
       font-family: Roboto Flex;
-      font-weight: 500px;
-      font-size: 36px;
+      font-size: 20px;
       font-style: normal;
       line-height: 43.2px;
       letter-spacing: 0.72px;
       color: #0b1519;
     }
     span {
-      padding: 56px 91px 32px 20px;
+      padding: 15px 90px 25px 20px;
       font-family: Roboto Flex;
-      font-weight: 400px;
+      // font-weight: 400px;
       font-size: 16px;
       font-style: normal;
       line-height: 24px;

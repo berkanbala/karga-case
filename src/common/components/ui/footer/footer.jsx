@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import ImageFacebook from "@/common/media/logo/facebook.png";
-import ImageInstagram from "@/common/media/logo/instagram.png";
-import ImageTwitter from "@/common/media/logo/twitter.png";
+import ImageFacebook2 from "@/common/media/logo/facebook2.png";
+import ImageInstagram3 from "@/common/media/logo/instagram3.png";
+import ImageTwitter1 from "@/common/media/logo/twitter1.png";
 import styles from "./footer.module.scss";
 
 export default function Footer() {
@@ -15,7 +15,7 @@ export default function Footer() {
             href="https://www.facebook.com/"
             className={styles.fit}
           >
-            <Image alt="" src={ImageFacebook} width={50} height={50} />
+            <Image alt="" src={ImageFacebook2} width={50} height={50} />
           </a>
         </li>
         <li className={styles.instagram}>
@@ -24,7 +24,7 @@ export default function Footer() {
             href="https://www.instagram.com/"
             className={styles.fit}
           >
-            <Image alt="" src={ImageInstagram} width={50} height={50} />
+            <Image alt="" src={ImageInstagram3} width={50} height={50} />
           </a>
         </li>
         <li className={styles.twitter}>
@@ -33,7 +33,7 @@ export default function Footer() {
             href="https://twitter.com/home"
             className={styles.fit}
           >
-            <Image alt="" src={ImageTwitter} width={50} height={50} />
+            <Image alt="" src={ImageTwitter1} width={50} height={50} />
           </a>
         </li>
       </ul>

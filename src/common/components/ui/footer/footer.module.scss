@@ -24,7 +24,7 @@
   height: 45px;
   text-align: center;
   line-height: 50px;
-  background: #111;
+  background: #ffffff;
   border-radius: 50%;
   color: #d9d9d9;
   transition: 0.5s;
@@ -36,15 +36,13 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #4267b2;
+  background: #3962b4;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
 }
 .icon .facebook a:hover {
-  color: #4267b2;
   background-color: #fff;
-  box-shadow: 0 0 15px #4267b2;
 }
 .icon .facebook a:hover::before {
   transform: scale(1.1);
@@ -57,15 +55,13 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #e1306c;
+  background: #e81a5f;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
 }
 .icon .instagram a:hover {
-  color: #e1306c;
   background-color: #fff;
-  box-shadow: 0 0 15px #e1306c;
 }
 .icon .instagram a:hover::before {
   transform: scale(1.1);
@@ -84,9 +80,7 @@
   z-index: -1;
 }
 .icon .twitter a:hover {
-  color: #1da1f2;
   background-color: #fff;
-  box-shadow: 0 0 15px #1da1f2;
 }
 .icon .twitter a:hover::before {
   transform: scale(1.1);

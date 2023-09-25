@@ -1,13 +1,17 @@
 .App {
+  position: relative;
+  margin-top: 40px;
   text-align: center;
   display: grid;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0 0 10px 0;
   background: #294dfa;
   .form {
+    gap: 5px;
+    position: relative;
     max-width: 700px;
     width: 100%;
-    margin: 0 auto;
+    margin: 10px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,6 +38,11 @@
     .input {
       height: 30px;
     }
+    .checkInput {
+      gap: 10px;
+      display: flex;
+      margin-left: 20px;
+    }
     .button {
       width: 200px;
       font-size: 16px;
@@ -47,6 +56,25 @@
       background-size: 300% 100%;
       border-radius: 50px;
       transition: all 0.4s ease-in-out;
+    }
+  }
+  .formImage {
+    gap: 5px;
+    bottom: 319px;
+    left: 850px;
+    position: relative;
+    display: flex;
+    width: 50px;
+    height: 90px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+
+    :last-child {
+      top: 207px;
+      right: 258px;
+      position: relative;
+      border-radius: 10px;
     }
   }
 }

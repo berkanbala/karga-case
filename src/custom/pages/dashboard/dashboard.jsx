@@ -1,8 +1,6 @@
 "use client";
 import Services from "@/custom/components/duty/services";
 import Staff from "@/custom/components/staff/staff";
-// import TheProject from "@/common/components/theProject/theProject";
-// import Questions from "@/common/components/questions/questions";
 import Fast from "@/custom/components/questions/faq";
 import Form from "@/custom/components/form/form";
 import Footer from "@/common/components/ui/footer/footer";
@@ -16,11 +14,6 @@ import "dotenv/config";
 require("dotenv").config();
 
 export default function Dashboard() {
-  const stylesImageAd = {
-    width: "100%",
-    height: "550px",
-  };
-
   return (
     <main className={styles.container}>
       <Header />
@@ -30,11 +23,9 @@ export default function Dashboard() {
         <Services />
         <Staff />
         {/* <div>feedback-slider</div> */}
-        {/* <TheProject /> */}
-        {/* <div className={styles.imageAd}> */}
-        <Image alt="icon" src={ImagePageAd} style={stylesImageAd} />
-        {/* </div> */}
-        {/* <Questions /> */}
+        <div className={styles.stylesImageAd}>
+          <Image alt="icon" src={ImagePageAd} fill />
+        </div>
         <Fast />
         <Form />
       </div>
