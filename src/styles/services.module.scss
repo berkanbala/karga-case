@@ -20,6 +20,7 @@
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+
     .stylesImageServices {
       position: relative;
       width: 275px;
@@ -45,6 +46,46 @@
       letter-spacing: 0.16px;
       color: #0b1519;
       opacity: 0.5;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .services {
+    display: grid;
+    text-align: center;
+    margin-top: 120px;
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      background: #f5f5f5;
+      position: relative;
+      top: 30%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      border-radius: 7px;
+      border: 2px solid #eddfe1;
+      box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+
+      h2 {
+        padding: 5px 10px 5px 2px;
+        font-size: 10px;
+        color: #0b1519;
+      }
+      span {
+        padding: 5px 10px 5px 2px;
+
+        font-size: 8px;
+        color: #0b1519;
+      }
+
+      .stylesImageServices {
+        position: relative;
+        width: 125px;
+        height: 70px;
+      }
     }
   }
 }
