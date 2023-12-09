@@ -1,6 +1,5 @@
 .container {
   text-align: center;
-  margin-bottom: 120px;
 
   .staff {
     display: flex;
@@ -17,7 +16,7 @@
     }
     .text {
       float: right;
-      text-align: right;
+      text-align: center;
       font-family: "Roboto Flex";
       font-style: normal;
       font-weight: 500;
@@ -41,13 +40,244 @@
         position: relative;
         display: flex;
         top: 360px;
-        // padding: 5px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: stretch;
+
+    .staff {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .title {
+        font-family: "Roboto Flex";
+        font-style: normal;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 30px;
+        letter-spacing: 0.96px;
+        text-transform: uppercase;
+        color: #0b1519;
+      }
+      .text {
+        float: right;
+        text-align: center;
+        font-family: "Roboto Flex";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 25px;
+        color: #0b1519;
+      }
+    }
+    .content {
+      display: grid;
+      position: relative;
+      padding: 10px;
+      cursor: pointer;
+      justify-items: center;
+      grid-template-rows: repeat(1, 250px);
+      grid-template-columns: repeat(4, 1fr);
+
+      .work {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        .span {
+          position: relative;
+          display: flex;
+          top: 204px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1430px) {
+  .container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: stretch;
+
+    .staff {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .title {
+        font-family: "Roboto Flex";
+        font-style: normal;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 30px;
+        letter-spacing: 0.96px;
+        text-transform: uppercase;
+        color: #0b1519;
+      }
+      .text {
+        float: right;
+        text-align: center;
+        font-family: "Roboto Flex";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 25px;
+        color: #0b1519;
+      }
+    }
+    .content {
+      display: grid;
+      position: relative;
+      padding: 10px;
+      cursor: pointer;
+      justify-items: center;
+      grid-template-rows: repeat(1, 250px);
+      grid-template-columns: repeat(4, 1fr);
+
+      .work {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        .span {
+          position: relative;
+          display: flex;
+          top: 204px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: stretch;
+
+    .staff {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .title {
+        font-family: "Roboto Flex";
+        font-style: normal;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 30px;
+        letter-spacing: 0.96px;
+        text-transform: uppercase;
+        color: #0b1519;
+      }
+      .text {
+        float: right;
+        text-align: center;
+        font-family: "Roboto Flex";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 25px;
+        color: #0b1519;
+      }
+    }
+    .content {
+      display: grid;
+      position: relative;
+      padding: 10px;
+      cursor: pointer;
+      justify-items: center;
+      grid-template-rows: repeat(1, 250px);
+      grid-template-columns: repeat(4, 1fr);
+
+      .work {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        .span {
+          position: relative;
+          display: flex;
+          top: 204px;
+        }
       }
     }
   }
 }
 
 @media only screen and (max-width: 750px) {
+  .container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: stretch;
+
+    .staff {
+      width: 739px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .title {
+        font-family: "Roboto Flex";
+        font-style: normal;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 30px;
+        letter-spacing: 0.96px;
+        text-transform: uppercase;
+        color: #0b1519;
+      }
+      .text {
+        float: right;
+        text-align: center;
+        font-family: "Roboto Flex";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 25px;
+        color: #0b1519;
+      }
+    }
+    .content {
+      display: grid;
+      position: relative;
+      padding: 10px;
+      cursor: pointer;
+      justify-items: center;
+      grid-template-rows: repeat(2, 250px);
+      grid-template-columns: repeat(2, 1fr);
+
+      .work {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        .span {
+          position: relative;
+          display: flex;
+          top: 204px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
   .container {
     margin-bottom: 140px;
     display: flex;
@@ -73,7 +303,7 @@
       }
       .text {
         float: right;
-        text-align: right;
+        text-align: center;
         font-family: "Roboto Flex";
         font-style: normal;
         font-weight: 500;
@@ -98,7 +328,6 @@
           position: relative;
           display: flex;
           top: 204px;
-          // padding: 5px;
         }
       }
     }

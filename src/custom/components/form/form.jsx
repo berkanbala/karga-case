@@ -84,11 +84,11 @@ export default function Form(errors) {
           <div className="error">You must enter your name</div>
         )}
       </form>
-      <div className={styles.formImage}>
+      {/* <div className={styles.formImage}>
         <Image alt="" src={imageForm} width={250} height={400} />
         <Image alt="" src={imageForm1} width={330} height={200} />
         <Image alt="" src={imageForm2} width={270} height={190} />
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -1,12 +1,11 @@
 .container {
+  width: 100%;
   position: relative;
   margin-bottom: 60px;
 
   .sliderImages {
     all: unset !important;
     position: absolute;
-    width: 500px;
-    height: 500px;
   }
 
   .arrowLeft {
@@ -33,7 +32,6 @@
 
   .slider {
     display: flex;
-    top: 1rem;
     padding-top: 8px;
     padding-bottom: 8px;
     justify-content: center;
@@ -46,27 +44,138 @@
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1600px) {
   .container {
-    width: 510px;
+    width: 1692px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .sliderImages {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+    }
+
+    .arrowLeft {
+      position: absolute;
+      border-radius: 9999px;
+      font-size: 24px;
+      color: #e41111;
+      cursor: pointer;
+      top: 200px !important;
+    }
+    .arrowRight {
+      position: absolute;
+      border-radius: 9999px;
+      font-size: 24px;
+      color: #e41111;
+      cursor: pointer;
+      top: 200px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 1430px) {
+  .container {
+    width: 1426px;
+    height: 213px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .sliderImages {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+    }
+
+    .arrowLeft {
+      position: absolute;
+      border-radius: 9999px;
+      font-size: 24px;
+      color: #e41111;
+      cursor: pointer;
+      top: 200px !important;
+    }
+    .arrowRight {
+      position: absolute;
+      border-radius: 9999px;
+      font-size: 24px;
+      color: #e41111;
+      cursor: pointer;
+      top: 200px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 997px;
     height: 250px;
     position: relative;
     display: flex;
     flex-direction: column;
-    // margin-top: 100px;
-    // margin-left: 212px;
 
-    // width: 250px;
-    // height: 250px;
-    // position: relative;
-    // display: flex;
-    // flex-direction: column;
-    // margin-bottom: 0;
     .arrowLeft {
       position: absolute;
-      /* margin-right: -6px; */
-      left: -73px;
-      padding: 8px;
+      border-radius: 9999px;
+      font-size: 24px;
+      color: #e41111;
+      cursor: pointer;
+      top: 200px !important;
+    }
+    .arrowRight {
+      position: absolute;
+      border-radius: 9999px;
+      font-size: 24px;
+      color: #e41111;
+      cursor: pointer;
+      top: 200px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .container {
+    width: 740px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .arrowLeft {
+      position: absolute;
+      border-radius: 9999px;
+      font-size: 24px;
+      color: #e41111;
+      cursor: pointer;
+      top: 200px !important;
+    }
+    .arrowRight {
+      position: absolute;
+      border-radius: 9999px;
+      font-size: 24px;
+      color: #e41111;
+      cursor: pointer;
+      top: 200px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 526px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 66px;
+
+    .arrowLeft {
+      position: absolute;
+      left: -6px;
       border-radius: 9999px;
       font-size: 24px;
       color: #e41111;
@@ -75,9 +184,7 @@
     }
     .arrowRight {
       position: absolute;
-      /* margin-right: -6px; */
-      right: -68px;
-      padding: 8px;
+      right: -6px;
       border-radius: 9999px;
       font-size: 24px;
       color: #e41111;

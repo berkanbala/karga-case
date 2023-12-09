@@ -1,9 +1,8 @@
 .container {
   position: relative;
   background-color: #fff;
-  width: 101%;
+  width: 100%;
   margin-top: 5px;
-  // overflow: hidden;
 }
 .icon {
   display: flex;
@@ -102,7 +101,6 @@
     overflow: hidden;
     background-color: #fff;
     width: 101%;
-    // position: fixed;
     bottom: 0;
     color: black;
     text-align: center;
@@ -113,6 +111,30 @@
       padding: 50px 100px 10px 211px;
       justify-items: start;
       justify-content: center;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    margin-top: 62px;
+    overflow: hidden;
+    background-color: #fff;
+    width: 532px;
+    color: black;
+    text-align: center;
+
+    .icon {
+      display: flex;
+      transform: translate(-10%, -10%);
+      padding: 50px 100px 10px 211px;
     }
 
     .footer {
