@@ -1,9 +1,20 @@
 .container {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 25px;
+  padding: 50px 50px 0px 70px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 20px;
+  padding: 0 10px;
+  margin-top: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .images {
+    cursor: pointer;
+  }
 
   .pages {
     display: flex;
@@ -24,56 +35,15 @@
   }
 }
 
-@media only screen and (max-width: 1600px) {
-  .container {
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    padding: 0;
-    margin-top: 40px;
-    justify-content: space-around;
-    .pages {
-      .link {
-        margin-right: 70px;
-        border-radius: 16px;
-        background-color: #0c0e0f;
-        padding: 25px;
-        color: #fff;
-        cursor: pointer;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1430px) {
-  .container {
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    padding: 0;
-    margin-top: 83px;
-    justify-content: space-around;
-    .pages {
-    }
-  }
-}
-
 @media only screen and (max-width: 1000px) {
   .container {
-    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     padding: 0;
-    margin-top: 83px;
+    margin-top: 30px;
     .pages {
       .link {
         margin-right: 16px;
@@ -87,25 +57,21 @@
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 600px) {
   .container {
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 0;
-    margin-top: 83px;
-
+    margin-top: 10px;
     .pages {
+      padding: 0 5px;
       .link {
-        margin-right: 16px;
+        margin-right: 7px;
         border-radius: 16px;
         background-color: #0c0e0f;
-        padding: 16px;
+        padding: 8px;
         color: #fff;
         cursor: pointer;
+        &:last-child {
+          margin-right: 0px;
+        }
       }
     }
   }
@@ -113,16 +79,23 @@
 
 @media only screen and (max-width: 400px) {
   .container {
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    margin-top: 37px;
+    margin-top: 10px;
+    .pages {
+      padding: 0 5px;
+      .link {
+        margin-right: 7px;
+        border-radius: 16px;
+        background-color: #0c0e0f;
+        padding: 5px;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
   }
 }

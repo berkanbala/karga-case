@@ -1,8 +1,15 @@
+import Footer from "@/common/components/ui/footer/footer";
+import Header from "@/common/components/ui/header/header";
+import ToastProvider from "@/common/context/toastProvider";
+import { Roboto_Flex } from "next/font/google";
 import "@/styles/globals.scss";
-import { MantineProvider } from "@mantine/core";
-import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const robotFlex = Roboto_Flex({
+  weight: ["400", "500", "700"],
+  style: ["normal"],
+  subsets: ["latin"],
+  fallback: [["system-ui", "arial"]],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -12,8 +19,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <MantineProvider>{children}</MantineProvider>
+      <head>
+        <link rel="icon" href="/media/logo/logo.svg" sizes="any" />
+      </head>
+      <body className={robotFlex.className} suppressHydrationWarning>
+        <ToastProvider>
+          <Header />
+          {children}
+          <Footer />
+        </ToastProvider>
       </body>
     </html>
   );

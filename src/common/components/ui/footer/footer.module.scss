@@ -2,13 +2,14 @@
   position: relative;
   background-color: #fff;
   width: 100%;
-  margin-top: 5px;
+  bottom: 0;
+  background: #1d284a;
 }
 .icon {
+  width: 100%;
+  height: 150px;
   display: flex;
-  transform: translate(-10%, -10%);
-  padding: 46px 6px 24px 377px;
-  justify-items: start;
+  padding: 50px 50px;
   justify-content: center;
 }
 .icon li {
@@ -21,17 +22,10 @@
 }
 .icon li a {
   position: relative;
-  display: block;
-  width: 45px;
-  height: 45px;
-  text-align: center;
-  line-height: 50px;
-  background: #ffffff;
-  border-radius: 50%;
-  color: #d9d9d9;
+  display: contents;
   transition: 0.5s;
 }
-.icon .facebook a::before {
+.icon .instagram a::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -43,14 +37,14 @@
   transform: scale(0.9);
   z-index: -1;
 }
-.icon .facebook a:hover {
+.icon .instagram a:hover {
   background-color: #fff;
 }
-.icon .facebook a:hover::before {
+.icon .instagram a:hover::before {
   transform: scale(1.1);
   box-shadow: 0 0 15px #4267b2;
 }
-.icon .instagram a::before {
+.icon .linkedin a::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -62,10 +56,10 @@
   transform: scale(0.9);
   z-index: -1;
 }
-.icon .instagram a:hover {
+.icon .linkedin a:hover {
   background-color: #fff;
 }
-.icon .instagram a:hover::before {
+.icon .linkedin a:hover::before {
   transform: scale(1.1);
   box-shadow: 0 0 15px #e1306c;
 }
@@ -93,55 +87,32 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: row-reverse;
+  color: rgba(255, 255, 255, 1);
+  font-family: Poppins;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 147.368% */
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 600px) {
   .container {
-    margin-top: 50px;
-    overflow: hidden;
-    background-color: #fff;
-    width: 101%;
-    bottom: 0;
-    color: black;
-    text-align: center;
-
     .icon {
-      display: flex;
-      transform: translate(-10%, -10%);
-      padding: 50px 100px 10px 211px;
-      justify-items: start;
-      justify-content: center;
     }
 
     .footer {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-direction: row-reverse;
+      font-size: 13px;
     }
   }
 }
 
 @media only screen and (max-width: 400px) {
   .container {
-    margin-top: 62px;
-    overflow: hidden;
-    background-color: #fff;
-    width: 532px;
-    color: black;
-    text-align: center;
-
     .icon {
-      display: flex;
-      transform: translate(-10%, -10%);
-      padding: 50px 100px 10px 211px;
     }
 
     .footer {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-direction: row-reverse;
+      font-size: 13px;
     }
   }
 }

@@ -3,8 +3,6 @@ import Services from "@/custom/components/duty/services";
 import Staff from "@/custom/components/staff/staff";
 import Fast from "@/custom/components/questions/faq";
 import Form from "@/custom/components/form/form";
-import Footer from "@/common/components/ui/footer/footer";
-import Header from "@/common/components/ui/header/header";
 import ImagePageAd from "@/common/media/images/image5.png";
 import Image from "next/image";
 import styles from "./dashboard.module.scss";
@@ -16,7 +14,6 @@ require("dotenv").config();
 export default function Dashboard() {
   return (
     <main className={styles.container}>
-      <Header />
       <ImageSlider />
       <div className={styles.content}>
         {/* <div className={styles.cookies}>cookies</div> */}
@@ -29,7 +26,6 @@ export default function Dashboard() {
         <Fast />
         <Form />
       </div>
-      <Footer />
     </main>
   );
 }
