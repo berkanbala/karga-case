@@ -1,26 +1,32 @@
 "use client";
-import Services from "@/custom/components/duty/services";
 import Staff from "@/custom/components/staff/staff";
-import Fast from "@/custom/components/questions/faq";
 import Form from "@/custom/components/form/form";
 import ImagePageAd from "@/common/media/images/image5.png";
 import Image from "next/image";
 import styles from "./dashboard.module.scss";
 import ImageSlider from "@/custom/components/imageSlider/imageSlider";
+import { useState } from "react";
+import CookiesUI from "@/custom/components/cookiesUI/cookiesUI";
+import SSS from "@/custom/components/sss/sss";
+import Section2 from "@/custom/components/Section2/section2";
 
 export default function Dashboard() {
+  const [showCookie, setShowCookie] = useState(
+    window.document.cookie.includes("didAgreePrivacy")
+  );
+
   return (
     <main className={styles.container}>
       <ImageSlider />
-      {/* <div className={styles.cookies}>cookies</div> */}
+      {!showCookie && <CookiesUI setShowCookie={setShowCookie} />}
       <div className={styles.content}>
-        <Services />
+        <Section2 />
         <Staff />
         {/* <div>feedback-slider</div> */}
         <div className={styles.stylesImageAd}>
           <Image alt="icon" src={ImagePageAd} fill />
         </div>
-        <Fast />
+        <SSS />
         <Form />
       </div>
     </main>

@@ -1,9 +1,29 @@
 .container {
   text-align: center;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 2;
+  padding: 0px 50px;
 
+  .eclipse {
+    position: absolute;
+    left: -88px;
+    top: -150px;
+    border-radius: 450px;
+    background-image: radial-gradient(
+      50% 50% at 50% 50%,
+      #4148ff 0%,
+      rgba(65, 72, 255, 0) 100%
+    );
+    z-index: -1;
+    width: 400px;
+    height: 400px;
+  }
   .staff {
     display: flex;
     flex-direction: row;
+
     .title {
       font-family: "Roboto Flex";
       font-style: normal;
@@ -27,135 +47,36 @@
   }
   .content {
     display: flex;
-    position: relative;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 10px 25px 10px;
+    padding: 10px 0px 25px 0px;
     cursor: pointer;
+    gap: 16px;
+    flex-direction: row;
+    justify-content: center;
+    height: 444px;
+    position: relative;
+    z-index: -1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 16px;
+    }
+
     .work {
-      position: relative;
-      width: 333px;
-      height: 333px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+      gap: 20px;
+      justify-items: center;
+
+      .images {
+        margin-bottom: 32px;
+      }
+
       .span {
         position: relative;
         display: flex;
-        top: 360px;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1600px) {
-  .container {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: stretch;
-
-    .staff {
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      .title {
-        font-family: "Roboto Flex";
-        font-style: normal;
-        font-size: 20px;
-        font-weight: 800;
-        line-height: 30px;
-        letter-spacing: 0.96px;
-        text-transform: uppercase;
-        color: #0b1519;
-      }
-      .text {
-        float: right;
-        text-align: center;
-        font-family: "Roboto Flex";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 10px;
-        line-height: 25px;
-        color: #0b1519;
-      }
-    }
-    .content {
-      display: grid;
-      position: relative;
-      padding: 10px;
-      cursor: pointer;
-      justify-items: center;
-      grid-template-rows: repeat(1, 250px);
-      grid-template-columns: repeat(4, 1fr);
-
-      .work {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        .span {
-          position: relative;
-          display: flex;
-          top: 204px;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1430px) {
-  .container {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: stretch;
-
-    .staff {
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      .title {
-        font-family: "Roboto Flex";
-        font-style: normal;
-        font-size: 20px;
-        font-weight: 800;
-        line-height: 30px;
-        letter-spacing: 0.96px;
-        text-transform: uppercase;
-        color: #0b1519;
-      }
-      .text {
-        float: right;
-        text-align: center;
-        font-family: "Roboto Flex";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 10px;
-        line-height: 25px;
-        color: #0b1519;
-      }
-    }
-    .content {
-      display: grid;
-      position: relative;
-      padding: 10px;
-      cursor: pointer;
-      justify-items: center;
-      grid-template-rows: repeat(1, 250px);
-      grid-template-columns: repeat(4, 1fr);
-
-      .work {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        .span {
-          position: relative;
-          display: flex;
-          top: 204px;
-        }
+        flex-direction: column;
       }
     }
   }
@@ -163,114 +84,64 @@
 
 @media only screen and (max-width: 1000px) {
   .container {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: stretch;
-
     .staff {
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
       .title {
-        font-family: "Roboto Flex";
-        font-style: normal;
-        font-size: 20px;
-        font-weight: 800;
-        line-height: 30px;
-        letter-spacing: 0.96px;
-        text-transform: uppercase;
-        color: #0b1519;
       }
       .text {
-        float: right;
-        text-align: center;
-        font-family: "Roboto Flex";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 10px;
-        line-height: 25px;
-        color: #0b1519;
+      }
+    }
+    .content {
+      .work {
+        .span {
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    padding: 0px 25px;
+    margin-bottom: 70px;
+    .staff {
+      flex-direction: column;
+      .title {
+        font-size: 40px;
+        letter-spacing: 0px;
+      }
+      .text {
       }
     }
     .content {
       display: grid;
-      position: relative;
-      padding: 10px;
-      cursor: pointer;
-      justify-items: center;
-      grid-template-rows: repeat(1, 250px);
-      grid-template-columns: repeat(4, 1fr);
-
+      grid-template-rows: repeat(1, 230px);
+      grid-template-columns: repeat(2, 160px);
       .work {
-        position: relative;
-        width: 200px;
-        height: 200px;
         .span {
-          position: relative;
-          display: flex;
-          top: 204px;
         }
       }
     }
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 600px) {
   .container {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: stretch;
-
+    padding: 0px 25px;
+    margin-bottom: 70px;
     .staff {
-      width: 739px;
-      height: auto;
-      display: flex;
       flex-direction: column;
-      justify-content: center;
-
       .title {
-        font-family: "Roboto Flex";
-        font-style: normal;
-        font-size: 20px;
-        font-weight: 800;
-        line-height: 30px;
-        letter-spacing: 0.96px;
-        text-transform: uppercase;
-        color: #0b1519;
+        font-size: 40px;
+        letter-spacing: 0px;
       }
       .text {
-        float: right;
-        text-align: center;
-        font-family: "Roboto Flex";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 10px;
-        line-height: 25px;
-        color: #0b1519;
       }
     }
     .content {
       display: grid;
-      position: relative;
-      padding: 10px;
-      cursor: pointer;
-      justify-items: center;
-      grid-template-rows: repeat(2, 250px);
-      grid-template-columns: repeat(2, 1fr);
-
+      grid-template-rows: repeat(1, 230px);
+      grid-template-columns: repeat(2, 160px);
       .work {
-        position: relative;
-        width: 200px;
-        height: 200px;
         .span {
-          position: relative;
-          display: flex;
-          top: 204px;
         }
       }
     }
@@ -279,55 +150,23 @@
 
 @media only screen and (max-width: 400px) {
   .container {
-    margin-bottom: 140px;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: stretch;
-    margin-bottom: 60px;
+    padding: 0px 25px;
+    margin-bottom: 70px;
     .staff {
-      width: 483px;
-      height: auto;
-      display: flex;
       flex-direction: column;
-      justify-content: center;
       .title {
-        font-family: "Roboto Flex";
-        font-style: normal;
-        font-size: 20px;
-        font-weight: 800;
-        line-height: 30px;
-        letter-spacing: 0.96px;
-        text-transform: uppercase;
-        color: #0b1519;
+        font-size: 40px;
+        letter-spacing: 0px;
       }
       .text {
-        float: right;
-        text-align: center;
-        font-family: "Roboto Flex";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 10px;
-        line-height: 25px;
-        color: #0b1519;
       }
     }
     .content {
       display: grid;
-      position: relative;
-      padding: 10px 10px 30px 50px;
-      cursor: pointer;
-      justify-content: center;
-      grid-template-rows: repeat(2, 250px);
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 230px);
+      grid-template-columns: repeat(2, 160px);
       .work {
-        position: relative;
-        width: 200px;
-        height: 200px;
         .span {
-          position: relative;
-          display: flex;
-          top: 204px;
         }
       }
     }
