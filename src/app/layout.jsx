@@ -1,5 +1,5 @@
-import Footer from "@/common/components/ui/footer/footer";
-import Header from "@/common/components/ui/header/header";
+import Footer from "@/common/components/layout/footer/footer";
+import Header from "@/common/components/layout/header/header";
 import ToastProvider from "@/common/context/toastProvider";
 import { Roboto_Flex } from "next/font/google";
 import "@/styles/globals.scss";
