@@ -1,0 +1,108 @@
+.container {
+  padding: 0px 50px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+
+  .mySwiper {
+    padding: 30px 50px;
+  }
+
+  .eclipse {
+    position: absolute;
+    left: -88px;
+    top: -150px;
+    border-radius: 450px;
+    background-image: radial-gradient(
+      50% 50% at 50% 50%,
+      #4148ff 0%,
+      rgba(65, 72, 255, 0) 100%
+    );
+    z-index: -1;
+    width: 400px;
+    height: 400px;
+  }
+
+  .caption {
+    color: #0b1519;
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    position: relative;
+
+    &::-webkit-scrollbar {
+      background: transparent;
+      -webkit-appearance: none;
+      width: 0;
+      height: 0;
+    }
+    .card {
+      height: 400px;
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      border-radius: 16px;
+      background-color: #f5f5f5;
+      padding: 40px 20px;
+      align-items: center;
+      transition: all 250ms ease-in-out;
+
+      .com {
+        display: flex;
+        flex-direction: row;
+        .image {
+          margin-right: 15px;
+          img {
+            width: 72px;
+            height: 72px;
+            border-radius: 16px;
+          }
+        }
+
+        .tom {
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .title {
+            color: #0b1519;
+            display: flex;
+            margin-bottom: 20px;
+            width: 100%;
+            font-weight: 500;
+            justify-content: center;
+            font-family: Roboto Flex;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            text-align: left;
+          }
+          .date {
+            display: flex;
+            opacity: 0.5;
+          }
+        }
+      }
+
+      .details {
+        display: flex;
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+}

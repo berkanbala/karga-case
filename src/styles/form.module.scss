@@ -1,10 +1,9 @@
 .App {
   display: block;
   width: 100%;
-  margin-top: 40px;
   text-align: center;
-  padding: 0 0 10px 0;
   background: #294dfa;
+
   .form {
     gap: 5px;
     position: relative;
@@ -79,71 +78,23 @@
   }
 }
 
-@media only screen and (max-width: 1500px) {
-  .App {
-    .form {
-      .h1 {
-      }
-      .span {
-      }
-      .input {
-      }
-      .checkInput {
-      }
-      .button {
-        margin-bottom: 5px;
-      }
-    }
-    .formImage {
-      left: 700px;
-    }
-  }
-}
-
-@media only screen and (max-width: 1250px) {
-  .App {
-    display: block;
-    width: 100%;
-    margin-top: 40px;
-    text-align: center;
-    padding: 0 0 10px 0;
-    background: #294dfa;
-    .form {
-      .h1 {
-      }
-      .span {
-      }
-      .input {
-      }
-      .checkInput {
-      }
-      .button {
-        margin-bottom: 5px;
-      }
-    }
-    .formImage {
-      display: none !important;
-    }
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .App {
-    .form {
-      .h1 {
-      }
-      .span {
-      }
-      .input {
-      }
-      .checkInput {
-      }
-      .button {
-        margin-bottom: 5px;
-      }
-    }
-    .formImage {
-      display: none !important;
-    }
-  }
-}
+// @media only screen and (max-width: 750px) {
+//   .App {
+//     .form {
+//       .h1 {
+//       }
+//       .span {
+//       }
+//       .input {
+//       }
+//       .checkInput {
+//       }
+//       .button {
+//         margin-bottom: 5px;
+//       }
+//     }
+//     .formImage {
+//       display: none !important;
+//     }
+//   }
+// }

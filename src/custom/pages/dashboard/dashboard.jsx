@@ -9,6 +9,7 @@ import { useState } from "react";
 import CookiesUI from "@/custom/components/cookiesUI/cookiesUI";
 import SSS from "@/custom/components/sss/sss";
 import Section2 from "@/custom/components/Section2/section2";
+import Customer from "@/custom/components/customer/customer";
 
 export default function Dashboard() {
   const [showCookie, setShowCookie] = useState(
@@ -22,7 +23,7 @@ export default function Dashboard() {
       <div className={styles.content}>
         <Section2 />
         <Staff />
-        {/* <div>feedback-slider</div> */}
+        <Customer />
         <div className={styles.stylesImageAd}>
           <Image alt="icon" src={ImagePageAd} fill />
         </div>

@@ -4,6 +4,7 @@ import styles from "./cookiesUI.module.scss";
 
 export default function CookiesUI(props) {
   const { setShowCookie } = props;
+
   const handleAcceptCookies = () => {
     window.document.cookie = "didAgreePrivacy";
     showNotification("success", "başarıyla kabul edildi");
@@ -11,6 +12,7 @@ export default function CookiesUI(props) {
   };
 
   const handleRejectCookies = () => setShowCookie(true);
+
   return (
     <div className={styles.container}>
       <div className={styles.text}>

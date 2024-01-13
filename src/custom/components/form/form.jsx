@@ -1,39 +1,35 @@
+"use client";
 import React, { useState } from "react";
 import styles from "@/styles/form.module.scss";
-import Image from "next/image";
-import imageForm from "@/common/media/images/imageForm.png";
-import imageForm1 from "@/common/media/images/imageForm1.png";
-import imageForm2 from "@/common/media/images/imageForm2.png";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
+import { useFormHook } from "@/common/hooks/useFormHook";
+import { validate } from "@/common/validate/validate";
+// import Image from "next/image";
+// import imageForm from "@/common/media/images/imageForm.png";
+// import imageForm1 from "@/common/media/images/imageForm1.png";
+// import imageForm2 from "@/common/media/images/imageForm2.png";
 
 export default function Form(errors) {
   const notify = () => toast("Successful..!");
 
-  const [text, setText] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
-  const [checked, setChecked] = useState(false);
+  const initialValues = {
+    text: "",
+    phone: "",
+    message: "",
+  };
+
+  const [check, setCheck] = useState(false);
+  const [form, setForm] = useFormHook(initialValues);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setPhone("");
-    setMessage("");
-    setText("");
-    setChecked("");
-  };
-  const handleChange = (e) => {
-    setChecked(e.target.value);
-  };
 
-  const changeText = (e) => {
-    setText(e.target.value);
-  };
-  const changePhone = (e) => {
-    setPhone(e.target.value);
-  };
-  const changeMessage = (e) => {
-    setMessage(e.target.value);
+    if (!validate(form)) {
+      return;
+    }
+    console.log(form);
+    setForm(initialValues);
+    setCheck("");
   };
 
   return (
@@ -44,42 +40,54 @@ export default function Form(errors) {
           Leave your contact details and we will contact you
         </span>
         <input
+          name="text"
           type="text"
           placeholder="How can I contact you?"
           className={styles.input}
-          onChange={changeText}
-          value={text}
+          onChange={setForm}
+          value={form.text}
           required
         />
         <input
+          name="phone"
           type="text"
           placeholder="Phone/email"
           className={styles.input}
-          onChange={changePhone}
-          value={phone}
+          onChange={setForm}
+          value={form.phone}
           required
         />
         <input
+          name="message"
           type="text"
           placeholder="Add a message"
           className={styles.input}
-          onChange={changeMessage}
-          value={message}
+          onChange={setForm}
+          value={form.message}
           required
         />
         <div className={styles.checkInput}>
-          <input type="checkbox" onChange={handleChange} checked={checked} />
-          <label>I agree to the processing of personal data.</label>
+          <input
+            onChange={(e) => setCheck(e.target.checked)}
+            type="checkbox"
+            checked={check}
+            id="checkbox"
+            value="checkbox"
+            required
+            readOnly={true}
+          />
+          <label htmlFor="checkbox">
+            I agree to the processing of personal data.
+          </label>
         </div>
         <button
           onClick={notify}
           type="submit"
           className={styles.button}
-          disabled={!checked}
+          disabled={!check}
         >
-          submit
+          Submit
         </button>
-        <ToastContainer />
         {errors.name && errors.name.type === "required" && (
           <div className="error">You must enter your name</div>
         )}
