@@ -4,12 +4,12 @@ import Form from "@/custom/components/form/form";
 import ImagePageAd from "@/common/media/images/image5.png";
 import Image from "next/image";
 import styles from "./dashboard.module.scss";
-import ImageSlider from "@/custom/components/imageSlider/imageSlider";
 import { useState } from "react";
 import CookiesUI from "@/custom/components/cookiesUI/cookiesUI";
 import SSS from "@/custom/components/sss/sss";
 import Section2 from "@/custom/components/Section2/section2";
 import Customer from "@/custom/components/customer/customer";
+import ImageSlider from "@/custom/components/ImageSlider/ImageSlider";
 
 export default function Dashboard() {
   const [showCookie, setShowCookie] = useState(
