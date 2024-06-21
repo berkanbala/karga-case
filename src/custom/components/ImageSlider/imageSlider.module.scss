@@ -53,6 +53,7 @@
     bottom: 0;
     flex-direction: row;
     margin-bottom: 10px;
+
     .slider {
       display: flex;
       padding-top: 8px;
@@ -66,7 +67,6 @@
         font-size: 24px;
         line-height: 32px;
         cursor: pointer;
-
         display: inline-block;
         height: 20px;
         width: 20px;
@@ -88,6 +88,7 @@
       left: 14px;
       bottom: 5px;
     }
+
     .arrowRight {
       left: 90px;
       bottom: 5px;
@@ -101,6 +102,7 @@
       left: 14px;
       bottom: 5px;
     }
+
     .arrowRight {
       left: 90px;
       bottom: 5px;

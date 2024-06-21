@@ -20,6 +20,7 @@
     width: 400px;
     height: 400px;
   }
+
   .staff {
     display: flex;
     flex-direction: row;
@@ -34,6 +35,7 @@
       text-transform: uppercase;
       color: #0b1519;
     }
+
     .text {
       float: right;
       text-align: center;
@@ -45,6 +47,7 @@
       color: #0b1519;
     }
   }
+
   .content {
     display: flex;
     padding: 10px 0px 25px 0px;
@@ -98,23 +101,26 @@
     }
   }
 }
+
 @media only screen and (max-width: 800px) {
   .container {
     padding: 0px 25px;
     margin-bottom: 70px;
+
     .staff {
       flex-direction: column;
+
       .title {
         font-size: 40px;
         letter-spacing: 0px;
       }
-      .text {
-      }
     }
+
     .content {
       display: grid;
       grid-template-rows: repeat(1, 230px);
       grid-template-columns: repeat(2, 160px);
+
       .work {
         .span {
         }
@@ -127,19 +133,21 @@
   .container {
     padding: 0px 25px;
     margin-bottom: 70px;
+
     .staff {
       flex-direction: column;
+
       .title {
         font-size: 40px;
         letter-spacing: 0px;
       }
-      .text {
-      }
     }
+
     .content {
       display: grid;
       grid-template-rows: repeat(1, 230px);
       grid-template-columns: repeat(2, 160px);
+
       .work {
         .span {
         }
@@ -152,19 +160,20 @@
   .container {
     padding: 0px 25px;
     margin-bottom: 70px;
+
     .staff {
       flex-direction: column;
+
       .title {
         font-size: 40px;
         letter-spacing: 0px;
-      }
-      .text {
       }
     }
     .content {
       display: grid;
       grid-template-rows: repeat(1, 230px);
       grid-template-columns: repeat(2, 160px);
+
       .work {
         .span {
         }

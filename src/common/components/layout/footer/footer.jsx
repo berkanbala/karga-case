@@ -9,29 +9,17 @@ export default function Footer() {
     <div className={styles.container}>
       <ul className={styles.icon}>
         <li className={styles.instagram}>
-          <a
-            target="_blank"
-            href="https://www.instagram.com/"
-            className={styles.fit}
-          >
+          <a target="_blank" href="https://www.instagram.com/">
             <Image alt="" src={ImageInstagram} width={50} height={50} />
           </a>
         </li>
         <li className={styles.linkedin}>
-          <a
-            target="_blank"
-            href="https://linkedin.com/"
-            className={styles.fit}
-          >
+          <a target="_blank" href="https://linkedin.com/">
             <Image alt="" src={ImageLinkedin} width={50} height={50} />
           </a>
         </li>
         <li className={styles.twitter}>
-          <a
-            target="_blank"
-            href="https://twitter.com/home/"
-            className={styles.fit}
-          >
+          <a target="_blank" href="https://twitter.com/home/">
             <Image alt="" src={ImageTwitter1} width={50} height={50} />
           </a>
         </li>

@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/common/components/ui/button/button";
 import { showNotification } from "@/common/config/notificationConfig";
 import styles from "./cookiesUI.module.scss";
@@ -6,7 +7,8 @@ export default function CookiesUI(props) {
   const { setShowCookie } = props;
 
   const handleAcceptCookies = () => {
-    window.document.cookie = "didAgreePrivacy";
+    // if (typeof window !== "undefined")
+    // window.document.cookie = "didAgreePrivacy";
     showNotification("success", "başarıyla kabul edildi");
     setShowCookie(true);
   };

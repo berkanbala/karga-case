@@ -2,40 +2,33 @@
 import React, { useState } from "react";
 import styles from "@/styles/form.module.scss";
 import { toast } from "react-toastify";
-import { useFormHook } from "@/common/hooks/useFormHook";
+import { useForm } from "@/common/hooks/useForm";
 import { validate } from "@/common/validate/validate";
 import { Button } from "@/common/components/ui/button/button";
 import { Input } from "@/common/components/ui/input/input";
-// import Image from "next/image";
-// import imageForm from "@/common/media/images/imageForm.png";
-// import imageForm1 from "@/common/media/images/imageForm1.png";
-// import imageForm2 from "@/common/media/images/imageForm2.png";
+import { getInitialValuesForm } from "./helpers";
+import { Checkbox } from "@/common/components/ui/checkbox/checkbox";
 
-export default function Form(errors) {
-  const notify = () => toast("Successful..!");
-
-  const initialValues = {
-    text: "",
-    phone: "",
-    message: "",
-  };
-
-  const [check, setCheck] = useState(false);
-  const [form, setForm] = useFormHook(initialValues);
+export default function Form() {
+  const [formData, setFormData] = useForm(getInitialValuesForm());
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!validate(form)) {
-      return;
-    }
-    console.log(form);
-    setForm(initialValues);
-    setCheck("");
+    toast.success("Success Notification !", {
+      position: "top-right",
+    });
+
+    // if (!validate(formData)) {
+    //   return;
+    // }
+    setFormData(getInitialValuesForm());
+    console.log({ formData });
   };
+  console.log({ formData });
 
   return (
-    <div className={styles.App}>
+    <div className={styles.container}>
       <form className={styles.form} onSubmit={handleSubmit}>
         <h1 className={styles.h1}>start your project</h1>
         <span className={styles.span}>
@@ -46,95 +39,47 @@ export default function Form(errors) {
           type="text"
           placeholder="How can I contact you?"
           className={styles.input}
-          onChange={setForm}
-          value={form.text}
+          onChange={setFormData}
+          value={formData.text}
           required
         />
-        {/* <input
-          name="text"
-          type="text"
-          placeholder="How can I contact you?"
-          className={styles.input}
-          onChange={setForm}
-          value={form.text}
-          required
-        /> */}
         <Input
           name="phone"
           type="text"
           placeholder="Phone/email"
           className={styles.input}
-          onChange={setForm}
-          value={form.phone}
+          onChange={setFormData}
+          value={formData.phone}
           required
         />
-        {/* <input
-          name="phone"
-          type="text"
-          placeholder="Phone/email"
-          className={styles.input}
-          onChange={setForm}
-          value={form.phone}
-          required
-        /> */}
         <Input
           name="message"
           type="text"
           placeholder="Add a message"
           className={styles.input}
-          onChange={setForm}
-          value={form.message}
+          onChange={setFormData}
+          value={formData.message}
           required
         />
-        {/* <input
-          name="message"
-          type="text"
-          placeholder="Add a message"
-          className={styles.input}
-          onChange={setForm}
-          value={form.message}
-          required
-        /> */}
         <div className={styles.checkInput}>
-          <Input
-            onChange={(e) => setCheck(e.target.checked)}
-            type="checkbox"
-            checked={check}
-            id="checkbox"
-            value="checkbox"
-            required
-            readOnly={true}
+          <Checkbox
+            onChange={setFormData}
+            name="checkbox"
+            checked={formData.checkbox}
           />
-          {/* <input
-            onChange={(e) => setCheck(e.target.checked)}
-            type="checkbox"
-            checked={check}
-            id="checkbox"
-            value="checkbox"
-            required
-            readOnly={true}
-          /> */}
           <label htmlFor="checkbox">
             I agree to the processing of personal data.
           </label>
         </div>
         <Button
-          onClick={notify}
           type="submit"
           className={styles.button}
-          disabled={!check}
+          disabled={Object.values(formData).some(
+            (formValue) => formValue == ""
+          )}
           label="Submit"
         />
-
-        {errors.name && errors.name.type === "required" && (
-          <div className="error">You must enter your name</div>
-        )}
       </form>
-      {/* <div className={styles.formImage}>
-        <Image alt="" src={imageForm} width={250} height={400} />
-        <Image alt="" src={imageForm1} width={330} height={200} />
-        <Image alt="" src={imageForm2} width={270} height={190} />
-      </div> */}
     </div>
   );
 }

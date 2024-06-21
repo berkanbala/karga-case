@@ -47,6 +47,7 @@
       width: 0;
       height: 0;
     }
+
     .card {
       height: 400px;
       width: 100%;
@@ -62,8 +63,10 @@
       .com {
         display: flex;
         flex-direction: row;
+
         .image {
           margin-right: 15px;
+
           img {
             width: 72px;
             height: 72px;
@@ -76,6 +79,7 @@
           display: flex;
           flex-direction: column;
           align-items: center;
+
           .title {
             color: #0b1519;
             display: flex;
@@ -89,6 +93,7 @@
             letter-spacing: 0.02em;
             text-align: left;
           }
+
           .date {
             display: flex;
             opacity: 0.5;

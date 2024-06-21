@@ -1,11 +1,11 @@
 // import { customerList } from "@/common/shared/customerList/customerList";
 import styles from "./customer.module.scss";
 import Image from "next/image";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
 import c1 from "@/common/media/images/c1.png";
 import c2 from "@/common/media/images/c2.png";
 import c3 from "@/common/media/images/c3.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
 import "swiper/scss";
 import "swiper/scss/scrollbar";
@@ -16,15 +16,7 @@ import "swiper/scss/virtual";
 export default function Customer() {
   return (
     <div className={styles.container}>
-      <div className={styles.eclipse}>
-        {/* <Image
-          className={styles.image}
-          width="450"
-          height="450"
-          alt="karga ellipse"
-          src="/media/icons/Ellipse.png"
-        /> */}
-      </div>
+      <div className={styles.eclipse} />
       <div className={styles.caption}>Customer feedback</div>
       <Swiper
         // install Swiper modules

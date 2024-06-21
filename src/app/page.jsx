@@ -1,5 +1,9 @@
-import Dashboard from "@/custom/pages/dashboard/dashboard";
+import dynamic from "next/dynamic";
+
+const Header = dynamic(() => import("../custom/pages/dashboard/dashboard"), {
+  ssr: false,
+});
 
 export default function Index() {
-  return <Dashboard />;
+  return <Header />;
 }

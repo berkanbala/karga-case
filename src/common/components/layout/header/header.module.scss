@@ -44,6 +44,7 @@
     gap: 20px;
     padding: 0;
     margin-top: 30px;
+
     .pages {
       .link {
         margin-right: 16px;
@@ -60,8 +61,10 @@
 @media only screen and (max-width: 600px) {
   .container {
     margin-top: 10px;
+
     .pages {
       padding: 0 5px;
+
       .link {
         margin-right: 7px;
         border-radius: 16px;
@@ -69,6 +72,7 @@
         padding: 8px;
         color: #fff;
         cursor: pointer;
+
         &:last-child {
           margin-right: 0px;
         }
@@ -80,8 +84,10 @@
 @media only screen and (max-width: 400px) {
   .container {
     margin-top: 10px;
+
     .pages {
       padding: 0 5px;
+
       .link {
         margin-right: 7px;
         border-radius: 16px;

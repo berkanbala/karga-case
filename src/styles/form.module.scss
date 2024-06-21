@@ -1,4 +1,4 @@
-.App {
+.container {
   display: block;
   width: 100%;
   text-align: center;
@@ -13,6 +13,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     .h1 {
       text-align: center;
       color: #fff;
@@ -24,6 +25,7 @@
       letter-spacing: 0.96px;
       text-transform: uppercase;
     }
+
     .span {
       color: #f6f8ff;
       font-family: Roboto Flex;
@@ -33,30 +35,18 @@
       line-height: 48px;
       letter-spacing: 0.64px;
     }
+
     .input {
       height: 30px;
     }
+
     .checkInput {
       gap: 10px;
       display: flex;
       margin-left: 20px;
     }
-    .button {
-      margin-bottom: 5px;
-      width: 200px;
-      font-size: 16px;
-      font-weight: 600;
-      color: #000000;
-      cursor: pointer;
-      margin-top: 20px;
-      height: 55px;
-      text-align: center;
-      border: none;
-      background-size: 300% 100%;
-      border-radius: 50px;
-      transition: all 0.4s ease-in-out;
-    }
   }
+
   .formImage {
     gap: 5px;
     bottom: 319px;
@@ -77,24 +67,3 @@
     }
   }
 }
-
-// @media only screen and (max-width: 750px) {
-//   .App {
-//     .form {
-//       .h1 {
-//       }
-//       .span {
-//       }
-//       .input {
-//       }
-//       .checkInput {
-//       }
-//       .button {
-//         margin-bottom: 5px;
-//       }
-//     }
-//     .formImage {
-//       display: none !important;
-//     }
-//   }
-// }

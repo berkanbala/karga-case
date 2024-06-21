@@ -1,15 +1,4 @@
 .container {
-  // padding: 20px 20px;
-  // border-radius: 16px;
-  // color: #fff;
-  // cursor: pointer;
-  // font-size: 14px;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // user-select: none;
-  // border: none;
-  // width: fit-content;
   margin-bottom: 5px;
   width: 200px;
   font-size: 16px;
@@ -24,23 +13,16 @@
   border-radius: 50px;
   transition: all 0.4s ease-in-out;
 
+  &:disabled {
+    cursor: not-allowed;
+  }
+
   &:focus {
-    // outline: 0;
   }
 
   &:hover {
   }
 
   &:active {
-    // transform: scale(0.99) !important;
   }
-}
-
-.deny {
-  // background-color: #a4a4a4;
-}
-
-.accept {
-  // background-color: #fff;
-  // color: #0b1519;
 }

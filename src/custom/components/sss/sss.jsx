@@ -1,7 +1,7 @@
-import { sss } from "@/common/shared/sss/sss";
 import styles from "./sss.module.scss";
-import { useState } from "react";
 import classNames from "classnames";
+import { sss } from "@/common/shared/sss/sss";
+import { useState } from "react";
 
 export default function SSS() {
   const [isActive, setIsActive] = useState(-1);
