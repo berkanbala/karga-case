@@ -12,7 +12,7 @@ export default function Section2() {
           <div className={styles.card} key={item.id}>
             <span className={styles.title}>{item.title}</span>
             <div className={styles.images}>
-              <Image alt="item image" src={item.image} />
+              <Image alt="item image" src={item.image} priority />
             </div>
             <span className={styles.details}>{item.details}</span>
           </div>

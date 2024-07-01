@@ -7,8 +7,8 @@ export default function CookiesUI(props) {
   const { setShowCookie } = props;
 
   const handleAcceptCookies = () => {
-    // if (typeof window !== "undefined")
-    // window.document.cookie = "didAgreePrivacy";
+    if (typeof window !== "undefined")
+      window.document.cookie = "didAgreePrivacy";
     showNotification("success", "başarıyla kabul edildi");
     setShowCookie(true);
   };

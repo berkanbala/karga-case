@@ -19,13 +19,10 @@ export default function Form() {
       position: "top-right",
     });
 
-    // if (!validate(formData)) {
-    //   return;
-    // }
     setFormData(getInitialValuesForm());
     console.log({ formData });
   };
-  console.log({ formData });
+  // console.log({ formData });
 
   return (
     <div className={styles.container}>

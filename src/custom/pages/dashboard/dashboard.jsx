@@ -15,7 +15,6 @@ export default function Dashboard() {
   const [showCookie, setShowCookie] = useState(false);
 
   useEffect(() => {
-    // if (typeof window === "undefined") console.log(window);
     if (typeof window !== "undefined") {
       setShowCookie(window.document.cookie.includes("didAgreePrivacy"));
     }
@@ -30,7 +29,7 @@ export default function Dashboard() {
         <Staff />
         <Customer />
         <div className={styles.stylesImageAd}>
-          <Image alt="icon" src={ImagePageAd} fill />
+          <Image alt="icon" src={ImagePageAd} fill priority />
         </div>
         <SSS />
         <Form />

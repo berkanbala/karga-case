@@ -22,22 +22,22 @@ export default function Staff() {
       </div>
       <div className={styles.content}>
         <div className={styles.work}>
-          <Image alt="" src={Man1} width={200} height={200} />
+          <Image priority alt="" src={Man1} width={200} height={200} />
           <span className={styles.span}>Mykhailo Kulyk</span>
           <span className={styles.span}>Founder. Designer</span>
         </div>
         <div className={styles.work}>
-          <Image alt="" src={Man2} width={200} height={200} />
+          <Image priority alt="" src={Man2} width={200} height={200} />
           <span className={styles.span}>Nikita Borishchenko</span>
           <span className={styles.span}>Chief Ux/Ui designer</span>
         </div>
         <div className={styles.work}>
-          <Image alt="" src={Woman1} width={200} height={200} />
+          <Image priority alt="" src={Woman1} width={200} height={200} />
           <span className={styles.span}>Valeria Lozitskaya</span>
           <span className={styles.span}>Art director of the 3D department</span>
         </div>
         <div className={styles.work}>
-          <Image alt="" src={Woman2} width={200} height={200} />
+          <Image priority alt="" src={Woman2} width={200} height={200} />
           <span className={styles.span}>Khrystyna Pechen</span>
           <span className={styles.span}>Art director of the 2D department</span>
         </div>

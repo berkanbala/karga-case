@@ -34,7 +34,7 @@ export default function Customer() {
           <div className={styles.card}>
             <div className={styles.com}>
               <div className={styles.image}>
-                <Image alt="item image" src={c1} />
+                <Image alt="item image" src={c1} priority />
               </div>
               <div className={styles.tom}>
                 <span className={styles.title}>High voltage mayonnaise </span>
@@ -56,7 +56,7 @@ export default function Customer() {
           <div className={styles.card}>
             <div className={styles.com}>
               <div className={styles.image}>
-                <Image alt="item image" src={c2} />
+                <Image alt="item image" src={c2} priority />
               </div>
               <div className={styles.tom}>
                 <span className={styles.title}>Bohdan Dubina </span>
@@ -76,7 +76,7 @@ export default function Customer() {
           <div className={styles.card}>
             <div className={styles.com}>
               <div className={styles.image}>
-                <Image alt="item image" src={c3} />
+                <Image alt="item image" src={c3} priority />
               </div>
               <div className={styles.tom}>
                 <span className={styles.title}>Albert Schmel </span>
@@ -95,7 +95,7 @@ export default function Customer() {
           <div className={styles.card}>
             <div className={styles.com}>
               <div className={styles.image}>
-                <Image alt="item image" src={c1} />
+                <Image alt="item image" src={c1} priority />
               </div>
               <div className={styles.tom}>
                 <span className={styles.title}>High voltage mayonnaise </span>

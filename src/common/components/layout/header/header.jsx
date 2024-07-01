@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <div className={styles.container}>
       <Link className={styles.images} href="/">
-        <Image alt="logo" src={Logo} />
+        <Image alt="logo" src={Logo} priority />
       </Link>
       <div className={styles.pages}>
         {navbarList.map((item) => (
