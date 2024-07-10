@@ -1,9 +1,11 @@
+@import "../../../assets/styles/variable.scss";
+
 .container {
   margin-bottom: 5px;
   width: 200px;
   font-size: 16px;
   font-weight: 600;
-  color: #000000;
+  color: $black;
   cursor: pointer;
   margin-top: 20px;
   height: 55px;
@@ -12,7 +14,7 @@
   background-size: 300% 100%;
   border-radius: 50px;
   transition: all 0.4s ease-in-out;
-  background-color: #ffffff;
+  background-color: $white;
 
   &:disabled {
     cursor: not-allowed;
@@ -22,10 +24,6 @@
   }
 
   &:hover {
-    // opacity: 0.5;
-    // background-color: #000000;
-    // color: #ffffff;
-    // text-decoration: none;
   }
 
   &:active {

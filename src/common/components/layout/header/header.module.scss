@@ -1,3 +1,5 @@
+@import "../../../assets/styles/variable.scss";
+
 .container {
   justify-content: space-between;
   width: 100%;
@@ -22,14 +24,14 @@
     .link {
       margin-right: 16px;
       border-radius: 16px;
-      background-color: #0c0e0f;
+      background-color: $black1;
       padding: 16px;
-      color: #fff;
+      color: $white;
       cursor: pointer;
 
       &:last-child {
         margin-right: 20px;
-        background-color: #294dfa;
+        background-color: $blue;
       }
     }
   }
@@ -49,9 +51,9 @@
       .link {
         margin-right: 16px;
         border-radius: 16px;
-        background-color: #0c0e0f;
+        background-color: $black1;
         padding: 16px;
-        color: #fff;
+        color: $white;
         cursor: pointer;
       }
     }
@@ -68,9 +70,9 @@
       .link {
         margin-right: 7px;
         border-radius: 16px;
-        background-color: #0c0e0f;
+        background-color: $black1;
         padding: 8px;
-        color: #fff;
+        color: $white;
         cursor: pointer;
 
         &:last-child {
@@ -91,9 +93,9 @@
       .link {
         margin-right: 7px;
         border-radius: 16px;
-        background-color: #0c0e0f;
+        background-color: $black1;
         padding: 5px;
-        color: #fff;
+        color: $white;
         cursor: pointer;
         display: flex;
         align-items: center;

@@ -1,7 +1,9 @@
+@import "../../../common/assets/styles/variable.scss";
+
 .container {
   display: flex;
   flex-direction: column;
-  background: #ffffff;
+  background: $white;
 
   .content {
     position: relative;

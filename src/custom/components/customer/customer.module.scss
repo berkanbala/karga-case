@@ -1,3 +1,5 @@
+@import "../../../common/assets/styles/variable.scss";
+
 .container {
   padding: 0px 50px;
   margin-bottom: 10px;
@@ -15,8 +17,8 @@
     border-radius: 450px;
     background-image: radial-gradient(
       50% 50% at 50% 50%,
-      #4148ff 0%,
-      rgba(65, 72, 255, 0) 100%
+      $blue5 0%,
+      $black2 100%
     );
     z-index: -1;
     width: 400px;
@@ -24,7 +26,7 @@
   }
 
   .caption {
-    color: #0b1519;
+    color: $black3;
     font-size: 48px;
     font-weight: 800;
     text-transform: uppercase;
@@ -81,7 +83,7 @@
           align-items: center;
 
           .title {
-            color: #0b1519;
+            color: $black3;
             display: flex;
             margin-bottom: 20px;
             width: 100%;

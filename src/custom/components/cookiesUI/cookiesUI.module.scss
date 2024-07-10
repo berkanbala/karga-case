@@ -1,7 +1,9 @@
+@import "../../../common/assets/styles/variable.scss";
+
 .container {
   height: fit-content;
   width: 100%;
-  background-color: #000;
+  background-color: $black;
   line-height: 150%;
   padding: 24px 56px;
   display: flex;
@@ -11,7 +13,7 @@
   z-index: 3;
 
   .text {
-    color: #fff;
+    color: $white;
     letter-spacing: 0.32px;
     font-size: 16px;
     font-weight: 400;

@@ -1,8 +1,10 @@
+@import "../../../assets/styles/variable.scss";
+
 .container {
   position: relative;
   width: 100%;
   bottom: 0;
-  background: #1d284a;
+  background: $blue1;
 
   .icon {
     width: 100%;
@@ -36,19 +38,19 @@
           width: 100%;
           height: 100%;
           border-radius: 50%;
-          background: #3962b4;
+          background: $blue2;
           transition: 0.5s;
           transform: scale(0.9);
           z-index: -1;
         }
 
         &:hover {
-          background-color: #fff;
+          background-color: $white;
         }
 
         &:hover::before {
           transform: scale(1.1);
-          box-shadow: 0 0 15px #4267b2;
+          box-shadow: 0 0 15px $blue3;
         }
       }
     }
@@ -62,19 +64,19 @@
           width: 100%;
           height: 100%;
           border-radius: 50%;
-          background: #e81a5f;
+          background: $pink;
           transition: 0.5s;
           transform: scale(0.9);
           z-index: -1;
         }
 
         &:hover {
-          background-color: #fff;
+          background-color: $white;
         }
 
         &:hover::before {
           transform: scale(1.1);
-          box-shadow: 0 0 15px #e1306c;
+          box-shadow: 0 0 15px $pink1;
         }
       }
     }
@@ -88,19 +90,19 @@
           width: 100%;
           height: 100%;
           border-radius: 50%;
-          background: #1da1f2;
+          background: $blue4;
           transition: 0.5s;
           transform: scale(0.9);
           z-index: -1;
         }
 
         &:hover {
-          background-color: #fff;
+          background-color: $white;
         }
 
         &:hover::before {
           transform: scale(1.1);
-          box-shadow: 0 0 15px #1da1f2;
+          box-shadow: 0 0 15px $blue4;
         }
       }
     }
@@ -111,7 +113,7 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: row-reverse;
-    color: rgba(255, 255, 255, 1);
+    color: $white;
     font-family: Poppins;
     font-size: 19px;
     font-style: normal;
